@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    color: #111;
+    background: url('images/background.png') #edeff0;
+}
+#container {
+    max-width: 960px;
+    background: #fff;
+    margin: 0 auto;
+}
+p {
+    max-width: 350px;
+    margin: 35px auto 0;
+    line-height: 2em;
+    text-align: left;
+}
+a {
+    text-decoration: none;
+    color: #39add1;
+    font-weight: 700;
+}
+header {
+    padding-top: 10px;
+    nav {
+        padding-bottom: 50px;
+        text-align: left;
+        .nav-icon {
+            height: 13px;
+            transition: transform .2s cubic-bezier(.34,-0.36,.65,2.65);
+        }
+        .home .st0,
+        .visit .st0,
+        .contact .st0 {
+            fill: #39ADD1;
+            transition: fill .5s;
+        }
+        ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        ul li:hover {
+            a {
+                color: #111;
+            }
+            .nav-icon {
+                transform: scale(2) rotate(-20deg);
+            }
+            .home .st0,
+            .visit .st0,
+            .contact .st0 {
+                fill: #111;
+            }
+        }
+    }
+    h1 {
+        line-height: 1em;
+    }
+    .logo-header {
+        margin-bottom: 5px;
+        display: none;
+        @media (max-width: 425px) {
+            display: block;
+            color: #EAAA7F;
+        }
+    }
+    .logo {
+        width: 140px;
+        .st0 {
+            fill: #BA8058;
+        }
+        .st1 {
+            fill: #EAAA7F;
+        }
+        .st2 {
+            fill: #F4C6A6;
+        }
+        @media (max-width: 425px) {
+            .logo-title {
+                display: none;
+            }
+        }
+    }
+}
+main {
+    padding-top: 50px;
+    h2 {
+        font-size: 28px;
+    }
+    ul {
+        padding: 0;
+    }
+    li {
+        display: inline-block;
+        color: #ba8058;
+        margin-right: 20px;
+        .dog-icon {
+            margin-bottom: 15px;
+            width: 170px;
+        }
+        .coat-red {
+            .st0 {
+                fill: #BA8058;
+            }
+            .st1 {
+                fill: #FBFEFF;
+            }
+            .st2 {
+                fill: #2D3339;
+            }
+            .st3 {
+                fill: #EAAA7F;
+            }
+        }
+        .coat-fawn {
+            .st0 {
+                fill: #EAAA7F;
+            }
+            .st1 {
+                fill: #FBFEFF;
+            }
+            .st2 {
+                fill: #2D3339;
+            }
+            .st3 {
+                fill: #F4C6A6;
+            }
+        }
+        .coat-sable {
+            .st0 {
+                fill: #844B24;
+            }
+            .st1 {
+                fill: #FBFEFF;
+            }
+            .st2 {
+                fill: #2D3339;
+            }
+            .st3 {
+                fill: #BA8058;
+            }
+        }
+        .coat-blacktan {
+            .st0 {
+                fill: #BA8058;
+            }
+            .st1 {
+                fill: #52595F;
+            }
+            .st2 {
+                fill: #FBFEFF;
+            }
+            .st3 {
+                fill: #2D3339;
+            }
+        }
+        span {
+            margin-left: -40px;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+footer {
+    width: 100%;
+    margin-top: 100px;
+    padding-bottom: 30px;
+    color: #ba8058;
+}
